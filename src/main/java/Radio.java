@@ -9,6 +9,8 @@ public class Radio {
     public void setCurrentStation(int station) {
         if (station >= 0 && station <= 9) {
             currentStation = station;
+        } else {
+            throw new IllegalArgumentException("Недопустимое значение станции: " + station);
         }
     }
 
@@ -35,6 +37,8 @@ public class Radio {
     public void setVolume(int volume) {
         if (volume >= 0 && volume <= 100) {
             this.volume = volume;
+        } else {
+            throw new IllegalArgumentException("Недопустимое значение громкости: " + volume);
         }
     }
 
