@@ -17,11 +17,10 @@ jobs:
       - name: Build with Maven
         run: mvn -B -e verify
           run: ./gradlew test
-
   <plugin>
   <groupId>org.jacoco</groupId>
   <artifactId>jacoco-maven-plugin</artifactId>
-  <version>0.8.5</version>
+  <version>0.8.7</version>
   
   <execution>
   <id>prepare-agent</id>
